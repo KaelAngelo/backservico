@@ -22,17 +22,20 @@ public class Servico {
 
     private String nomeCliente;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date dataInicio;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date dataTermino;
 
     private String descrServico;
-
     private Double valorServico;
-
     private Double valorPago;
+    
+    @Temporal(TemporalType.DATE)
+    private Date dataPagamento;
+
+    private String status;//pendente, realizado, cancelado
 
 
 
