@@ -1,6 +1,8 @@
 package com.servico.backservico.entity;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +25,7 @@ public class Servico {
     private String nomeCliente;
 
     @Temporal(TemporalType.DATE)
-    private Date dataInicio;
+    private Date dataInicio = new Date();
 
     @Temporal(TemporalType.DATE)
     private Date dataTermino;
